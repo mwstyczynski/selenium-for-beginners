@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="SmokeTests" verbose="1">
+
+
+	<groups>
+		<run>
+			<include name="smoke" />
+			<!-- <exclude name="broken" /> -->
+		</run>
+	</groups>
+
+	<test name="PositiveTests">
+		<classes>
+			<class name="com.herokuapp.theinternet.PositiveTests" />
+
+		</classes>
+	</test>
+
+	<test name="NegativeTests">
+		<classes>
+			<class name="com.herokuapp.theinternet.NegativeTests">
+<!-- 			<methods>
+					<exclude name="smoke" />
+				</methods> -->
+			</class>
+		</classes>
+	</test>
+</suite>

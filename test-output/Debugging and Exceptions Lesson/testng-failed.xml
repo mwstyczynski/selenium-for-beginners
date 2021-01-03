@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Debugging and Exceptions Lesson]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Exceptions@Chrome@DebuggingLesson(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.LoginTestsCombined">
+        <methods>
+          <include name="positiveLoginTest"/>
+          <include name="tareDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.LoginTestsCombined -->
+    </classes>
+  </test> <!-- Exceptions@Chrome@DebuggingLesson(failed) -->
+</suite> <!-- Failed suite [Debugging and Exceptions Lesson] -->
